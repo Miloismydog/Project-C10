@@ -4,13 +4,13 @@ var seaImg,shipImg;
 function preload(){
   //uncomment the code to add animation to ship 
 
-  shipImg1 = loadAnimation("ship-1.png");
+  //shipImg1 = loadAnimation("ship-1.png");
   //shipImg1 = loadAnimation("ship-1.png");
   //shipImg1 = loadAnimation("ship-1");
-  //shipImg1 = loadAnimation("ship-1.png","ship-2.png","ship-1.png","ship-2.png");
+  shipImg1 = loadAnimation("ship-1.png","ship-2.png","ship-1.png","ship-2.png");
   //shipImg1 = loadAnimation("ship-1","ship-2","ship-1","ship-2");
   
-  //seaImg = loadImage("sea.png");
+  seaImg = loadImage("sea.png");
 }
 
 function setup(){
@@ -36,9 +36,9 @@ function draw() {
 
   //uncomment code to reset the background
   if(sea.x < 0){
-    sea.x = 0;
-    sea.x = sea.width;
-    //sea.x = sea.width/8;
+    //sea.x = 0;
+    //sea.x = sea.width;
+    sea.x = sea.width/8;
     //sea.y = height;
   }
 
